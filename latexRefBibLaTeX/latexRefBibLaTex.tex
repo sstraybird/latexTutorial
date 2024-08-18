@@ -1,0 +1,21 @@
+\documentclass{ctexart}
+% biblatex/biber
+% 新的TEX参考文献排版引擎
+% 样式文件(参考文献样式文件--bbx文件,引用样式文件--cbx)使用LATEX编写
+% 支持根据本地化排版,如:
+%     biber -l zh_pinyin texfile,用于指定按拼音排序
+%     biber -l zh_stroke texfile,用于按笔画排序
+\usepackage[style=caspervector,backend=biber,utf8]{biblatex}
+\addbibresource{test.bib}
+\begin{document}
+	% 一次管理,多次应用
+	无格式化引用\cite{mittelbach2004}
+	
+	带方括号的引用\parencite{mittelbach2004}
+	
+	上标引用\supercite{6-1}
+	
+	\nocite{*}
+	
+	\printbibliography[title={参考文献}]
+\end{document}
