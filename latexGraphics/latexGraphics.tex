@@ -1,0 +1,20 @@
+\documentclass{ctexart}
+
+% 导言区: \usepackage{graphicx}
+% 语法: \includegraphics[options]{文件名}
+% 格式: EPS,PDF,PNG,JPEG,BMP
+
+\usepackage{graphicx}
+\graphicspath{{figures/},{pics/}}
+
+\begin{document}
+\LaTeX{} 中插图
+
+\includegraphics{lion}
+\includegraphics[scale=0.3]{lion}
+\includegraphics[height=2cm]{lion}
+\includegraphics[width=2cm]{lion}
+\includegraphics[height=0.1\textheight]{lion}
+\includegraphics[width=0.1\textwidth]{lion}
+\includegraphics[angle=-45,width=0.2\textwidth]{lion}
+\end{document}
