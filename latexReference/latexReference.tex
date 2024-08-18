@@ -1,0 +1,35 @@
+\documentclass{ctexart}
+\usepackage[round]{natbib}
+% \bibliographystyle{plain}
+\bibliographystyle{plainnat}
+\begin{document}
+
+% 一次管理，一次使用
+% 参考文献格式:
+% \begin{thebibliography}{编号样本}
+%     \bibitem[记号]{引用标志}文献条目1
+%     \bibitem[记号]{引用标志}文献条目2
+%     ...
+% \end{thebibliography}
+%   其中文献条目包括: 作者，题目，出版社，年代，版本，页码等
+%   引用时候要可以采用 \cite{引用标志1,引用标志2,...}
+% 引用一篇文章 \cite{article1}    引用一本书\cite{book1}等等
+%     \begin{thebibliography}{99}
+%         \bibitem{article1}陈立辉，苏伟，蔡川，陈小云.\emph{基于Latex的Web数学公式提取方法研究}[J].
+%         \bibitem{book1} William H.Press,Saul A.Teukilsky,\emph{Numerical Recipes 3rd Edition:The Art of Sceintific Computing}
+%         Cambridege University Press,New York,2007.
+%         \bibitem{latexGuide} Kopka Helmut,W. Daly Patrick,\emph{Guide to \LaTeX},$4^{th}$ Edition.Availabe at \texttt{http://www.amazon.com}
+%         \bibitem{latexMath} Graetzer George,\emph{Math Into \LaTeX},Birkh Boston;3 edition (June 22,2000)
+%     \end{thebibliography}
+
+
+这是一个参考文献的引用\cite{hufflen2006names} 
+好好\cite{mittelbach2004} 
+    
+    \nocite{*}
+    
+    aaa
+    
+    \bibliography{test,cnki}
+
+\end{document}
