@@ -1,0 +1,33 @@
+% 导言区
+\documentclass{ctexart}
+
+% \begin{tabular}[<垂直对齐方式>]{<列格式说明 >}
+% <表项>&<表项>&...&<表项>  \\
+% ....
+% \end{tabular}
+% 用\\表示换行
+% 用&表示不同的列
+% 1-本列左对齐
+% c-本列居中对齐
+% r-本列右对齐
+% p{<宽>}-本列宽度固定,能够自动换行
+% 正文区(文稿区)
+
+
+% 正文区
+\begin{document}
+    \begin{tabular}{|l ||  c | c | c | p{1.5cm} |}
+        \hline
+        姓名 & 语文 & 数学 & 外语 & 备注        \\
+        \hline \hline
+        张三 & 97   & 100 & 93  & 优秀      \\
+        \hline
+        李四 & 75   & 64  & 52  & 补考另行通知  \\
+        \hline
+    \end{tabular}
+\end{document}
+
+
+% texdoc booktab
+% texdoc longtab
+% texdoc tabu
