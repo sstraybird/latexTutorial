@@ -1,0 +1,57 @@
+% 导言区
+\documentclass[12pt]{article}
+
+\usepackage{ctex}
+
+\newcommand{\myfont}{\textit{\textbf{\textsf{Fancy Text}}}}
+% 正文区
+\begin{document}
+    %字体族设置(罗马字体、无衬线字体、打字机字体)
+    \textrm{Roman Family}
+    \textsf{Sans Serif Family}
+    \texttt{Typewriter Family}
+
+    {\rmfamily Roman Family} {\sffamily Sans Serif Family} {\ttfamily Typewriter Family}
+
+    \sffamily who you are? you find self on everyone around.take you as the same as others!
+
+    \ttfamily Are you wise than others? definitely no. in some ways,may it is true.what can you achieve? a luxurious house? a brillilant car? an admirable career? who knows
+
+    % 字体系列设置(粗细、宽度)
+    \textmd{Medium Series}
+    \textbf{Boldface Series}
+
+    {\mdseries Medium Series} {\bfseries Boldface Series}
+
+    %字体形状(直立、斜体、伪斜体、小型大写)
+    \textup{Upright Shape}
+    \textit{Italic Shape}
+    \textsl{Slanted Shape}
+    \textsc{Small Caps Shape}
+
+    {\upshape Upright Shape} {\itshape Italic Shape} {\slshape Slanted Shape} {\scshape Small Caps Shape}
+
+    % 中文字体
+    {\songti 宋体} \quad {\heiti 黑体} \quad {\fangsong 仿宋}    {\kaishu 楷书}
+
+    中文字体的\textbf{粗体}与\textit{斜体}
+    
+    %字体大小
+    {\tiny Hello}	\\
+    {\scriptsize Hello} \\
+    {\footnotesize Hello}   \\
+    {\small Hello}  \\
+    {\normalsize Hello} \\  %与normalsize相对的大小，由文档类的参数控制的
+    {\large Hello}  \\
+    {\Large Hello}  \\
+    {\LARGE hello}  \\
+    {\huge hello}   \\
+    {\Huge hello}   \\
+
+    % 中文字号设置命令
+    \zihao{-0} 你好!    \\
+    \zihao{5} 你好!    
+
+    % latex的思想：格式与内容分离，不建议在文档中使用大量命令，建议使用newcommand定义一个新的命令，以执行相关的操作
+    \myfont
+\end{document}
